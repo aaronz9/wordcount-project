@@ -1,0 +1,27 @@
+<h1> There are {{count}} in your text</h1>
+
+<a href="{% url 'home' %}">
+Start Again
+</a>
+
+<h1>Full Text:</h1>
+{{fulltext}}
+
+
+<!--how we declare for loop in html  -->
+<!-- for each word and count total in worddictionary  -->
+<!--KEY is word and VALUE is counttotal -->
+
+{% for word,counttotal in sortedWords  %} <!--print out from sortedWords -->
+
+<br /> <br />
+
+{{word}} - {{counttotal}}
+<br />
+
+
+
+
+
+
+{% endfor %}

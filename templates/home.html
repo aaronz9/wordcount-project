@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Word-Counter</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+
+
+
+  <form action="{% url 'count' %}">  <!--  -->
+
+    <div class="form-group">
+      <label for="comment">Comment:</label>
+      <textarea class="form-control" cols="40" rows="5" id="comment" name="fulltext"></textarea> <!-- focus on name -->
+    </div>
+
+    <br />
+    <button type="submit" class="btn btn-primary" value="Count!">Submit</button>
+
+
+  </form>
+
+<a href="{%url 'aboutUs'%}">About us</a>
+
+</div>
+
+</body>
+</html>
